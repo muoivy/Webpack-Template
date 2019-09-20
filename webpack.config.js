@@ -1,16 +1,37 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HTMLWebpackPlugin = require('html-webpack-plugin');
+const fs = require('fs');
+
+// Our function that generates our html plugins
+function generateHtmlPlugins (templateDir) {
+    // Read files in template directory
+    const templateFiles = fs.readdirSync(path.resolve(__dirname, templateDir))
+    return templateFiles.map(item => {
+        // Split names and extension
+        const parts = item.split('.')
+        const name = parts[0]
+        const extension = parts[1]
+        // Create new HTMLWebpackPlugin with options
+        return new HTMLWebpackPlugin({
+            filename: `${name}.html`,
+            template: path.resolve(__dirname, `${templateDir}/${name}.${extension}`)
+        })
+    })
+}
+
+// Call our function on our views directory.
+const htmlPlugins = generateHtmlPlugins('./src/html/views')
 
 module.exports = ( env, argv ) => ({
-    entry: './src/assets/js/index.js',
+    entry: './src/js/index.js',
     devServer: {
-        contentBase: path.resolve(__dirname, 'src'),
+        contentBase: path.resolve(__dirname, 'dist'),
         watchContentBase: true,
         port: 3000,
         open: true
     },
     output: {
-        filename: 'bundle.js',
+        filename: 'assets/js/bundle.js',
         path: path.resolve(__dirname, 'dist')
     },
     module: {
@@ -29,8 +50,6 @@ module.exports = ( env, argv ) => ({
         ]
     },
     plugins: [
-        new HtmlWebpackPlugin({
-            template: './src/index.pug'
-        })
-    ]
+
+    ].concat(htmlPlugins)
 });
