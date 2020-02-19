@@ -1,0 +1,30 @@
+// percentage
+per(n, w = $base-width)
+	percentage((n / w))
+
+// media query
+lp()
+  @media $lp
+    {block}
+
+tab()
+  @media screen and (min-width: 768px) and (max-width: 1440px)
+    {block}
+
+pc()
+  @media $pc
+    {block}
+
+sp()
+  @media $sp
+    {block}
+
+sd()
+  @media $sd
+    {block}
+
+// Opacity
+opacity(n)
+	opacity n
+	if support-for-ie
+		filter unquote('progid:DXImageTransform.Microsoft.Alpha(Opacity=' + round(n * 100) + ')')
