@@ -1,15 +1,14 @@
 extend _includes/_template
 
-block vars
-	- page = 'top'
-	- title = 'Demo page'
-	- description = ''
-	- img = '/assets/img/share/ogp.jpg'
-	- url = '';
+append variables
+  - var page = 'top';
+  - var title = 'Demo page';
+  - var description = '';
+  - var img = '/assets/img/share/ogp.jpg';
+  - var url = '';
 
 block main
-	#wrapper
-		h1.logo
-			img(src="assets/img/top/logo.png" alt="")
-		a(href="sub.html") link sub
-	// #wrapper
+  main
+    h1.logo
+      img(src="assets/img/top/logo.png" alt="")
+    a(href="sub.html") link sub
