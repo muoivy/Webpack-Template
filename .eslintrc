@@ -9,8 +9,8 @@
   "parserOptions": {
     "sourceType": "module",
     "ecmaFeatures": {
-    "jsx": true
-  }
+      "jsx": true
+    }
   },
   "rules": {
     "arrow-body-style": "error",

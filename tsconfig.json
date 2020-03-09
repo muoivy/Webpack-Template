@@ -11,8 +11,6 @@
     },
     "lib": ["es2017", "dom"],
     "sourceMap": true
-    //"noImplicitAny": false,
-    //"noImplicitThis": false
   },
   "include": ["./src/**/*.ts"],
   "exclude": [
