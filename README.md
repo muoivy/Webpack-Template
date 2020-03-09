@@ -7,7 +7,7 @@ version : 10.14.0
 
 ## package install
 ```
-$ npm i
+npm i
 ```
 
 ## Local build
