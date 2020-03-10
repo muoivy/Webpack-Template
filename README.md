@@ -1,11 +1,13 @@
-# Webpack
+# Webpack Tempate
 
 ## node
+```
 version : 10.14.0
+```
 
 ## Usage
 
-## package install
+## Package install
 ```
 npm i
 ```
@@ -34,17 +36,17 @@ Enter the commit message in the following format.
 #### Type
 `type` must be one of the following.
 
-* **build**: 
-* **ci**: 
-* **chore**: 
-* **docs**: 
-* **feat**: 
-* **fix**: 
-* **perf**: 
-* **refactor**: 
-* **revert**: 
-* **style**: 
-* **test**: 
+* **build**: Build system or external dependencies changes
+* **ci**: CI configurations and scripts changes
+* **chore**: Add or change build processes, tools, and libraries used (do not include changes to source code)
+* **docs**: Documentation
+* **feat**: Feature
+* **fix**: Bug fix
+* **perf**: Improves performance
+* **refactor**: Restructuring existing code, but not bug or feature
+* **revert**: Reverts a previous commit
+* **style**: Formatting, missing semi colons, etc.
+* **test**: Adding missing tests
 
 #### Scope(optional)
 `scope` can be anything that identifies the scope of the changes made by the commit.
