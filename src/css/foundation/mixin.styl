@@ -1,30 +1,49 @@
+$screensize = 375
+
 // percentage
 per(n, w = $base-width)
-	percentage((n / w))
+  percentage((n / w))
 
-// media query
-lp()
-  @media $lp
+// viewport width
+vw(val, baseVal = $base-width)
+  ((val / baseVal) * 100)vw
+
+get-vw($size, $viewport = $screensize)
+  $rate = (100 / $viewport)
+  $rate * $size * 1vw
+
+get-per($size, $viewport = $screensize)
+  $rate = (100 / $viewport)
+  $rate * $size * 1%
+
+// Media Query
+lg-layout()
+  @media $lg
     {block}
 
-tab()
-  @media screen and (min-width: 768px) and (max-width: 1440px)
-    {block}
-
-pc()
+pc-layout()
   @media $pc
     {block}
 
-sp()
+tab-layout()
+  @media screen and (min-width: 768px) and (max-width: 1440px)
+    {block}
+
+sp-layout()
   @media $sp
     {block}
 
-sd()
+sd-layout()
   @media $sd
+    {block}
+
+landscapehack()
+  @media screen and (orientation: landscape)
     {block}
 
 // Opacity
 opacity(n)
-	opacity n
-	if support-for-ie
-		filter unquote('progid:DXImageTransform.Microsoft.Alpha(Opacity=' + round(n * 100) + ')')
+  opacity n
+
+  if (support-for-ie)
+    filter unquote('progid:DXImageTransform.Microsoft.Alpha(Opacity=' + round(n * 100) + ')')

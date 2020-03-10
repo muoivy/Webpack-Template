@@ -33,7 +33,7 @@
       "prettier --write",
       "git add"
     ],
-    "./src/styles/**/*.styl": [
+    "./src/css/**/*.styl": [
       "stylus-supremacy format glob --replace --options ./supremacy.json",
       "git add"
     ]

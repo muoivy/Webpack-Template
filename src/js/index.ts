@@ -14,8 +14,7 @@ Array.prototype.forEach.call(
           : JSON.parse(opts)
         : {}
       try {
-        const Module = require(`./modules/${key.charAt(0).toUpperCase() +
-          key.slice(1)}`).default
+        const Module = require(`./modules/${key.charAt(0).toUpperCase() + key.slice(1)}`).default
         if (Module !== void 0) {
           return new Module(element, options)
         }
