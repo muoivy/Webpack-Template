@@ -10,39 +10,40 @@ version : 10.14.0
 
 ```
 root/
-├── server/
-│	└── index.js
 ├── lib/
-│	└── imagemin.js
+│   └── imagemin.js
+├── server/
+│   └── index.js
 ├── src/
-│	├── css/
-│  	├── foundation/
-│  	│	├── var.styl
-│  	│ 	│	├── mixin.styl
-│  	│ 	│	├── base.styl
-│  	│  	│	└── index.styl
-│  	│  	├── layout/
-│  	│  	│	└── index.styl
-│  	│  	├── object/
-│  	│  	│	├── component/
-│  	│  	│	│	└── index.styl
-│  	│  	│	├── project/
-│  	│  	│	│	└── index.styl
-│  	│  	│	└── utility/
-│  	│  	│		└── index.styl
-│  	│  	└── index.styl
-│	├── html/
-│  	│	├── _includes/
-│  	│  	│	├── _template.pug
-│  	│  	│  	├── _header.pug
-│  	│  	│  	└── _footer.pug
-│  	│  	├── index.pug
-│  	│  	└── sub.pug
-│	├── img/
-│	└── js/
-│  		├── modules/
-│  	 	│	└── Common.ts
-│  	  	└── index.ts
+│   ├── css/
+│   │   ├── foundation/
+│   │   │   ├── var.styl
+│   │   │   ├── mixin.styl
+│   │   │   ├── base.styl
+│   │   │   └── index.styl
+│   │   ├── layout/
+│   │   │   └──index.styl
+│   │   ├── object/
+│   │   │   ├── component/
+│   │   │   │   └── index.styl
+│   │   │   ├── project/
+│   │   │   │   └── index.styl
+│   │   │   ├── utility/
+│   │   │   │   └── index.styl
+│   │   │   └── index.styl
+│   │   └── index.styl
+│   ├── html/
+│   │   ├── _includes/
+│   │   │   ├── _template.pug
+│   │   │   ├── _header.pug
+│   │   │   └── _footer.pug
+│   │   ├── index.pug
+│   │   └── sub.pug
+│   ├── js/
+│   │   ├── modules/
+│   │   │   └── Common.ts
+│   │   └── index.ts
+│   └── img/
 ├── htdocs/
 ├── .babelrc
 ├── .commitlintrc.js
