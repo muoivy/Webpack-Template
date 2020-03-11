@@ -1,29 +1,87 @@
 # Webpack Tempate
 
 ## node
+
 ```
 version : 10.14.0
+```
+
+## File Structure
+
+```
+root/
+├── server/
+│		└── index.js
+├── lib/
+│		└── imagemin.js
+├── src/
+│		├── css/
+│  	│  	├── foundation/
+│  	│  	│		├── var.styl
+│  	│  	│		├── mixin.styl
+│  	│  	│		├── base.styl
+│  	│  	│		└── index.styl
+│  	│  	├── layout/
+│  	│  	│		└── index.styl
+│  	│  	├── object/
+│  	│  	│		├── component/
+│  	│  	│		│		└── index.styl
+│  	│  	│		├── project/
+│  	│  	│		│		└── index.styl
+│  	│  	│		└── utility/
+│  	│  	│				└── index.styl
+│  	│  	└── index.styl
+│		├── html/
+│  	│		├── _includes/
+│  	│  	│		├── _template.pug
+│  	│  	│  	├── _header.pug
+│  	│  	│  	└── _footer.pug
+│  	│  	├── index.pug
+│  	│  	└── sub.pug
+│		├── img/
+│		└── js/
+│  			├── modules/
+│  	 		│		└── Common.ts
+│  	  	└── index.ts
+├── htdocs/
+├── .babelrc
+├── .commitlintrc.js
+├── .editorconfig
+├── .eslintrc
+├── .gitignore
+├── .npmrc
+├── .prettierrc
+├── package.json
+├── package-lock.json
+├── README.md
+├── supremacy.json
+├── tsconfig.json
+└── tslint.json
 ```
 
 ## Usage
 
 ## Package install
+
 ```
-npm i
+npm install
 ```
 
 ## Local build
+
 ```
 npm run start
 ```
 
 ## Production build
+
 ```
 npm run publish
 ```
 
 ## Commit Message Format
 Enter the commit message in the following format.
+
 ```
 <type>(<scope>): <subject>
 
@@ -34,6 +92,7 @@ Enter the commit message in the following format.
 `type` and` subject` are required, but `scope`,` body`, and `footer` can be omitted.
 
 #### Type
+
 `type` must be one of the following.
 
 * **build**: Build system or external dependencies changes
@@ -49,14 +108,17 @@ Enter the commit message in the following format.
 * **test**: Adding missing tests
 
 #### Scope(optional)
+
 `scope` can be anything that identifies the scope of the changes made by the commit.
 For example, you can use `*` if the file name or module name you changed or the range of influence is various.
 
 #### Description
+
 `description` gives a summary of the changes made by the commit, both imperative and present.
 Do not capitalize the first letter. Also, do not use a trailing dot.
 
 #### Body, Footer(optional)
+
 If the `type`,` scope`, and `description` have insufficient information or cannot be entered due to restrictions, enter the body and footer.
 The body should state in more detail why the change was made and what it would do if it were not changed.
 The footer mainly contains a reference to the issue.
