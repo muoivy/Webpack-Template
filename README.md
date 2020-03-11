@@ -11,37 +11,37 @@ version : 10.14.0
 ```
 root/
 ├── server/
-│		└── index.js
+│	└── index.js
 ├── lib/
-│		└── imagemin.js
+│	└── imagemin.js
 ├── src/
-│		├── css/
-│  	│  	├── foundation/
-│  	│  	│		├── var.styl
-│  	│  	│		├── mixin.styl
-│  	│  	│		├── base.styl
-│  	│  	│		└── index.styl
+│	├── css/
+│  	├── foundation/
+│  	│	├── var.styl
+│  	│ 	│	├── mixin.styl
+│  	│ 	│	├── base.styl
+│  	│  	│	└── index.styl
 │  	│  	├── layout/
-│  	│  	│		└── index.styl
+│  	│  	│	└── index.styl
 │  	│  	├── object/
-│  	│  	│		├── component/
-│  	│  	│		│		└── index.styl
-│  	│  	│		├── project/
-│  	│  	│		│		└── index.styl
-│  	│  	│		└── utility/
-│  	│  	│				└── index.styl
+│  	│  	│	├── component/
+│  	│  	│	│	└── index.styl
+│  	│  	│	├── project/
+│  	│  	│	│	└── index.styl
+│  	│  	│	└── utility/
+│  	│  	│		└── index.styl
 │  	│  	└── index.styl
-│		├── html/
-│  	│		├── _includes/
-│  	│  	│		├── _template.pug
+│	├── html/
+│  	│	├── _includes/
+│  	│  	│	├── _template.pug
 │  	│  	│  	├── _header.pug
 │  	│  	│  	└── _footer.pug
 │  	│  	├── index.pug
 │  	│  	└── sub.pug
-│		├── img/
-│		└── js/
-│  			├── modules/
-│  	 		│		└── Common.ts
+│	├── img/
+│	└── js/
+│  		├── modules/
+│  	 	│	└── Common.ts
 │  	  	└── index.ts
 ├── htdocs/
 ├── .babelrc
