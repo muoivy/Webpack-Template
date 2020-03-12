@@ -19,16 +19,33 @@ root/
 │   │   ├── foundation/
 │   │   │   ├── var.styl
 │   │   │   ├── mixin.styl
+│   │   │   ├── reset.styl
 │   │   │   ├── base.styl
 │   │   │   └── index.styl
 │   │   ├── layout/
+│   │   │   ├── header.styl
+│   │   │   ├── main.styl
+│   │   │   ├── footer.styl
+│   │   │   ├── sidebar.styl
 │   │   │   └──index.styl
 │   │   ├── object/
 │   │   │   ├── component/
+│   │   │   │   ├── button.styl
+│   │   │   │   ├── media.styl
 │   │   │   │   └── index.styl
 │   │   │   ├── project/
+│   │   │   │   ├── articles.styl
+│   │   │   │   ├── comments.styl
+│   │   │   │   ├── gallery.styl
+│   │   │   │   ├── profile.styl
 │   │   │   │   └── index.styl
 │   │   │   ├── utility/
+│   │   │   │   ├── align.styl
+│   │   │   │   ├── clearfix.styl
+│   │   │   │   ├── margin.styl
+│   │   │   │   ├── position.styl
+│   │   │   │   ├── size.styl
+│   │   │   │   ├── text.styl
 │   │   │   │   └── index.styl
 │   │   │   └── index.styl
 │   │   └── index.styl
