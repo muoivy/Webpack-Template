@@ -1,0 +1,191 @@
+/* Margin / Padding
+--------------------------------------- */
+.u-m
+	for $i in 0 .. 20
+		$vp = (100 / $screensize)
+
+		&g
+			&{$i * 5}
+				+pc-layout()
+					margin ($i * 5)px !important
+
+				+sp-layout()
+					margin ($i * 5)px !important
+					margin ($vp * $i * 5)vw !important
+
+				&--pc
+					+pc-layout()
+						margin ($i * 5)px !important
+
+				&--sp
+					+sp-layout()
+						margin ($i * 5)px !important
+						margin ($vp * $i * 5)vw !important
+
+		&t
+			&{$i * 5}
+				+pc-layout()
+					margin-top ($i * 5)px !important
+
+				+sp-layout()
+					margin-top ($i * 5)px !important
+					margin-top ($vp * $i * 5)vw !important
+
+				&--pc
+					+pc-layout()
+						margin-top ($i * 5)px !important
+
+				&--sp
+					+sp-layout()
+						margin-top ($i * 5)px !important
+						margin-top ($vp * $i * 5)vw !important
+
+		&b
+			&{$i * 5}
+				+pc-layout()
+					margin-bottom ($i * 5)px !important
+
+				+sp-layout()
+					margin-bottom ($i * 5)px !important
+					margin-bottom ($vp * $i * 5)vw !important
+
+				&--pc
+					+pc-layout()
+						margin-bottom ($i * 5)px !important
+
+				&--sp
+					+sp-layout()
+						margin-bottom ($i * 5)px !important
+						margin-bottom ($vp * $i * 5)vw !important
+
+		&l
+			&{$i * 5}
+				+pc-layout()
+					margin-left ($i * 5)px !important
+
+				+sp-layout()
+					margin-left ($i * 5)px !important
+					margin-left ($vp * $i * 5)vw !important
+
+				&--pc
+					+pc-layout()
+						margin-left ($i * 5)px !important
+
+				&--sp
+					+sp-layout()
+						margin-left ($i * 5)px !important
+						margin-left ($vp * $i * 5)vw !important
+
+		&r
+			&{$i * 5}
+				+pc-layout()
+					margin-right ($i * 5)px !important
+
+				+sp-layout()
+					margin-right ($i * 5)px !important
+					margin-right ($vp * $i * 5)vw !important
+
+				&--pc
+					+pc-layout()
+						margin-right ($i * 5)px !important
+
+				&--sp
+					+sp-layout()
+						margin-right ($i * 5)px !important
+						margin-right ($vp * $i * 5)vw !important
+
+
+
+.u-p
+	for $i in 0 .. 20
+		$vp = (100 / $screensize)
+
+		&g
+			&{$i * 5}
+				+pc-layout()
+					padding ($i * 5)px !important
+
+				+sp-layout()
+					padding ($i * 5)px !important
+					padding ($vp * $i * 5)vw !important
+
+				&--pc
+					+pc-layout()
+						padding ($i * 5)px !important
+
+				&--sp
+					+sp-layout()
+						padding ($i * 5)px !important
+						padding ($vp * $i * 5)vw !important
+
+		&t
+			&{$i * 5}
+				+pc-layout()
+					padding-top ($i * 5)px !important
+
+				+sp-layout()
+					padding-top ($i * 5)px !important
+					padding-top ($vp * $i * 5)vw !important
+
+				&--pc
+					+pc-layout()
+						padding-top ($i * 5)px !important
+
+				&--sp
+					+sp-layout()
+						padding-top ($i * 5)px !important
+						padding-top ($vp * $i * 5)vw !important
+
+		&b
+			&{$i * 5}
+				+pc-layout()
+					padding-bottom ($i * 5)px !important
+
+				+sp-layout()
+					padding-bottom ($i * 5)px !important
+					padding-bottom ($vp * $i * 5)vw !important
+
+				&--pc
+					+pc-layout()
+						padding-bottom ($i * 5)px !important
+
+				&--sp
+					+sp-layout()
+						padding-bottom ($i * 5)px !important
+						padding-bottom ($vp * $i * 5)vw !important
+
+		&l
+			&{$i * 5}
+				+pc-layout()
+					padding-left ($i * 5)px !important
+
+				+sp-layout()
+					padding-left ($i * 5)px !important
+					padding-left ($vp * $i * 5)vw !important
+
+				&--pc
+					+pc-layout()
+						padding-left ($i * 5)px !important
+
+				&--sp
+					+sp-layout()
+						padding-left ($i * 5)px !important
+						padding-left ($vp * $i * 5)vw !important
+
+		&r
+			&{$i * 5}
+				+pc-layout()
+					padding-right ($i * 5)px !important
+
+				+sp-layout()
+					padding-right ($i * 5)px !important
+					padding-right ($vp * $i * 5)vw !important
+
+				&--pc
+					+pc-layout()
+						padding-right ($i * 5)px !important
+
+				&--sp
+					+sp-layout()
+						padding-right ($i * 5)px !important
+						padding-right ($vp * $i * 5)vw !important

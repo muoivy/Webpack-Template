@@ -1,0 +1,61 @@
+/* Display Switch - show/hide
+--------------------------------------- */
+.u-none
+	display none !important
+	&--pc
+		+pc-layout()
+			display none !important
+	&--sp
+		+sp-layout()
+			display none !important
+
+.u-inlineblock
+	display inline-block !important
+	&--pc
+		+pc-layout()
+			display inline-block !important
+	&--sp
+		+sp-layout()
+			display inline-block !important
+
+.u-block
+	display block !important
+	&--pc
+		+pc-layout()
+			display block !important
+	&--sp
+		+sp-layout()
+			display block !important
+
+.u-flex
+	&--start
+		display flex
+		justify-content flex-start
+
+	&--center
+		display flex
+		justify-content center
+
+	&--end
+		display flex
+		justify-content flex-end
+
+	&--between
+		display flex
+		justify-content space-between
+
+	&--arownd
+		display flex
+		justify-content space-around
+
+	&--vcenter
+		display flex
+		align-items center
+
+	&--vstart
+		display flex
+		align-items flex-start
+
+	&--vend
+		display flex
+		align-items flex-end

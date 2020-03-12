@@ -32,10 +32,11 @@ button
 #wrapper
 	overflow hidden
 
-.is-pc
-	+sp-layout()
-		display none !important
+.inner
+	max-width 1000px
+	width 94%
+	margin 0 auto
 
-.is-sp
-	+pc-layout()
-		display none !important
+	+sp-layout()
+		width 86%
+		max-width inherit

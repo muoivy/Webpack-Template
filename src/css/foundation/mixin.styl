@@ -1,5 +1,3 @@
-$screensize = 375
-
 // percentage
 per(n, w = $base-width)
   percentage((n / w))
@@ -47,3 +45,27 @@ opacity(n)
 
   if (support-for-ie)
     filter unquote('progid:DXImageTransform.Microsoft.Alpha(Opacity=' + round(n * 100) + ')')
+
+clearfix()
+  &::after
+    content ''
+    display block
+    clear both
+
+placeholderColor($color)
+  &:placeholder-shown
+    color $color
+
+  &::-webkit-input-placeholder
+    color $color
+
+  &:-moz-placeholder
+    color $color
+    opacity 1
+
+  &::-moz-placeholder
+    color $color
+    opacity 1
+
+  &:-ms-input-placeholder
+    color $color
