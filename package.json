@@ -82,7 +82,7 @@
     "open-cli": "^5.0.0",
     "path-extra": "^4.3.0",
     "prettier": "1.19.1",
-    "pug": "^2.0.4",
+    "pug": "^3.0.1",
     "pug-cli2": "^1.0.0-alpha6.1",
     "rimraf": "^3.0.2",
     "stylus": "^0.54.7",
